@@ -1,0 +1,19 @@
+
+create database agenda;
+
+create table contato (
+	id int not null primary key auto_increment,
+    	nome varchar(50),
+    	telefone varchar(50),
+	email varchar(50),
+        data_nascimento varchar(11),
+        imagem varchar(1000),
+        id_usuario int
+);
+
+create table usuario (
+	id int not null primary key auto_increment,
+    	nome varchar(50),
+	usuario varchar(50),
+    	senha varchar(50)
+);
